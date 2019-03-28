@@ -1,4 +1,4 @@
-# esr
+# ESR
 C++ source codes for SpinCore pulsed blaster ESRPro
 
 Need registers.h and spinapi.h header files
