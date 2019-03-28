@@ -1,11 +1,9 @@
-// Author: Naufer Nusran on Aug 20, 2014
+// Author: Naufer Nusran.  Aug 20, 2014
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "spinapi.h"
-// #include "gpib_win.h"
 #define NSTOSEC 1000000000.0
-//clock frequency
 #define CLOCK_FREQUENCY 500.0 
 #define BNC0 0x01
 
