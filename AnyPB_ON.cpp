@@ -12,8 +12,7 @@ char INPUT_FILE[]="turnon.txt";// the location of the file holding the sequence
 
 int getl(char *line,int max,FILE *fp);
 
-int main(void)
-{    
+int main(void){    
     
     double clock_freq=CLOCK_FREQUENCY;
     int nbytes = 2000;
@@ -40,7 +39,7 @@ int main(void)
     for (i=0;i<numlines;i++){
 		getl(line,nbytes,fp);
 		sscanf(line,"channel:%d \n",&out);
-		// loopwidth = loopwidth+ (temp[i+1].time - temp[i].time);
+		
 	}
 	// flags = BNC0 <<(unsigned int) (out-1);
 	flags = (unsigned int) out;
@@ -71,12 +70,10 @@ int main(void)
        
     // when done sweeping, close pulseblaster
     pb_close();    
-	 // getchar();//hold windows command prompt so errors can be read
 	return(0);
 }
 
-int getl(char *line,int max,FILE *fp)
-{
+int getl(char *line,int max,FILE *fp){
  	if (fgets(line,max,fp) == NULL)
  	   return 0;
     else 
